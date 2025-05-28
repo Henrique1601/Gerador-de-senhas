@@ -9,19 +9,19 @@ Um gerador de senhas com funcionalidades, feito no curso do Matheus Battisti
 - Incluir símbolos
 - Incluir letras maiúsculas
 - Incluir letras minusculas
-- 
+  
 
 ## Screenshots
 
-![App Screenshot](./img/little.png))
-![App Screenshot](./img/image.png))
+![App Screenshot](./img/little.png)
+![App Screenshot](./img/image.png)
 
 ## Rodando localmente
 
 Clone o projeto
 
 ```bash
-  git clone 
+  git clone https://github.com/Henrique1601/Gerador-de-senhas
 ```
 
 ## Stack utilizada
