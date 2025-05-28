@@ -1,0 +1,187 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(180deg, rgba(234, 2, 255, 1) 0%, #0097ff 100%);
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  margin: 2rem auto;
+  max-width: 900px;
+  min-height: auto;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.banner {
+  background-image: url("../img/bg-form.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: saturation;
+  width: 50%;
+}
+
+.banner-layer {
+  background-color: rgba(25, 11, 122, 0.7);
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-layer h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+#register-form {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-register {
+  background-color: #ffffff;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 0.2rem;
+  text-align: center;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  text-align: center;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-control input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.6rem 0;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-bottom: 2px solid #0097ff;
+}
+
+#password-options {
+  display: none;
+}
+
+#generated-password {
+  display: none;
+  flex-direction: column;
+}
+
+#generated-password h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#password-text {
+  font-weight: bold;
+  color: #0703e6;
+}
+
+#register-form button[type="submit"],
+#generate-password-button,
+#copy-password {
+  background-image: linear-gradient(90deg, #0703e6, #0097ff);
+  background-color: #0703e6;
+  color: #ffffff;
+  border: none;
+  opacity: 0.8;
+  max-width: 150px;
+  border-radius: 15px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#register-form button[type="submit"]:hover,
+#generate-password-button:hover,
+#copy-password:hover {
+  background-color: #0097ff;
+  opacity: 1;
+}
+#register-form button[type="submit"]{
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+
+#register-form p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+#register-form span,
+#show-password-options {
+  color: #81d340;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#register-form span:hover,
+#show-password-options:hover {
+  color: #0703e6;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .banner {
+    width: 100%;
+    min-height: 200px;
+  }
+  .container-register {
+    width: 100%;
+  }
+}
