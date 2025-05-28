@@ -21,7 +21,7 @@ Um gerador de senhas com funcionalidades, feito no curso do Matheus Battisti
 Clone o projeto
 
 ```bash
-  git clone 
+  git clone https://github.com/Henrique1601/Gerador-de-senhas
 ```
 
 ## Stack utilizada
